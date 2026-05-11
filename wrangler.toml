@@ -1,0 +1,9 @@
+name = "ct-signaling"
+main = "src/index.ts"
+compatibility_date = "2026-02-13"
+
+# KV namespace for ephemeral SDP mailbox.
+# When deploying via "Deploy to Cloudflare" button, the KV namespace
+# is auto-provisioned. For manual deploy: wrangler kv namespace create ROOMS
+[[kv_namespaces]]
+binding = "ROOMS"
